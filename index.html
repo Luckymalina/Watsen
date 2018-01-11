@@ -15,14 +15,14 @@
 
   <div class="page">
 
-    <div class="page-sidebar">
+    <div class="page-sidebar page-sidebar--left">
+      <button class="page-sidebar__btn page-sidebar__btn--left"></button>
       <div class="page-sidebar__header">
         <div class="page-sidebar__logo">
           <img src="" alt="Логотип WatSen">
         </div>
         <h1 class="page-sidebar__title">Температура воды на пляжах крыма</h1>
       </div>
-
       <div class="page-sidebar__body">
         <ul class="page-menu">
           <li class="page-menu__item">
@@ -45,7 +45,6 @@
           </li>
         </ul>
       </div>
-
       <div class="page-sidebar__footer">
         <ul class="social-block">
           <li class="social-block__item">
@@ -71,41 +70,38 @@
         <p class="copyright">2017 WatSen</p>
       </div>
     </div>
-    <!-- /page-sidebar -->
+    <!-- /page-sidebar left -->
 
-    <div class="page-content content">
+    <section class="page-map">
+      <div class="page-map__wrap">
+        <!-- место под карту -->
+      </div>
+    </section>
+    <!-- /content-map -->
 
-      <section class="content-map">
-        <div class="content-map__wrap">
-          <!-- место под карту -->
-        </div>
-        <div class="content-map-panel">
-          <div class="content-map-panel__toggles">
-            <button class="content-panel__button content-panel__button--info">Информация</button>
-            <button class="content-panel__button content-panel__button--share">Поделиться</button>
-          </div>
-          <div class="content-map-panel__panel content-map-panel__panel--info">
-            <button class="content-map-panel__panel-close">Закрыть панель</button>
-            <h2 class="content-map-panel__panel-title">Информация</h2>
-            <p class="content-map-panel__panel-desc">Температура замерятся до 10 раз в сутки в режиме Online
-              отображается на нашем сайте и в мобильном приложении</p>
-          </div>
-          <div class="content-map-panel__panel content-map-panel__panel--share">
-            <button class="content-map-panel__panel-close">Закрыть панель</button>
-            <h2 class="content-map-panel__panel-title">Поделиться</h2>
-            <input type="text" name="link" value="https://watsen.info" readonly="">
-            <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-            <script src="//yastatic.net/share2/share.js"></script>
-          </div>
-        </div>
-      </section>
-      <!-- /content-map -->
-      <section class="content-banner">
-        <img src="" alt="">
-      </section>
-      <!-- /content-banner -->
+    <div class="page-sidebar page-sidebar--right">
+      <button class="page-sidebar__btn page-sidebar__btn--info">Информация</button>
+      <button class="page-sidebar__btn page-sidebar__btn--share">Поделиться</button>
+      <div class="page-sidebar__panel page-sidebar__panel--info">
+        <button class="page-sidebar__panel-close">Закрыть панель</button>
+        <h2 class="page-sidebarl__panel-title">Информация</h2>
+        <p class="page-sidebar__panel-desc">Температура замерятся до 10 раз в сутки в режиме Online
+          отображается на нашем сайте и в мобильном приложении</p>
+      </div>
+      <div class="page-sidebar__panel page-sidebar__panel--share">
+        <button class="page-sidebar__panel-close">Закрыть панель</button>
+        <h2 class="page-sidebar__panel-title">Поделиться</h2>
+        <input type="text" name="link" value="https://watsen.info" readonly="">
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+      </div>
     </div>
-    <!--/page-content -->
+    <!--/ page-sidebar right -->
+
+    <section class="page-banner">
+      <img src="" alt="">
+    </section>
+    <!-- /content-banner -->
 
   </div>
 
