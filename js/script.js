@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   $('.slick').slick({
         arrows: false,
         vertical: true,
@@ -15,17 +15,17 @@ $(document).ready(function(){
   var menuActive = false;
   var menuWidth = $('#left').width();
 
-  $('.btn_map_menu').click(function(){
+  $('.page-sidebar__btn--left').click(function(){
 
           if (!menuActive) {
-              $('#btn_map_menu').animate({'margin-left':menuWidth+'px'}, 250);
-              $('#left').animate({left:'0'}, 250);
-              $('.btn_map_menu').addClass('active');
+              $('.page-sidebar__btn--left').animate({'margin-left':menuWidth+'px'}, 250);
+              $('.page-sidebar--left').animate({left:'0'}, 250);
+              $('.page-sidebar__btn--left').addClass('open');
           }
           else {
-              $('#btn_map_menu').animate({'margin-left':'0px'}, 250);
-              $('#left').animate({left:'-'+menuWidth+'px'}, 250);
-              $('.btn_map_menu').removeClass('active');
+              $('.page-sidebar__btn--left').animate({'margin-left':'0px'}, 250);
+              $('.page-sidebar--left').animate({left:'-'+menuWidth+'px'}, 250);
+              $('.page-sidebar__btn--left').removeClass('open');
           }
 
           $('#btns_map_sidebar').animate({'margin-right':0}, 250);
